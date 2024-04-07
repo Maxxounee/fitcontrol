@@ -1,0 +1,49 @@
+{
+	"name": "fitcontrol",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+		"lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
+		"lint": "npm run lint:js && npm run lint:style",
+		"lintfix": "npm run lint:js -- --fix && npm run lint:style -- --fix"
+	},
+	"dependencies": {
+		"@splinetool/loader": "^0.9.507",
+		"@splinetool/runtime": "^0.9.507",
+		"babel-preset-es2015": "^6.24.1",
+		"core-js": "^3.25.3",
+		"nuxt": "^2.17.2",
+		"spline-vue": "^0.1.3",
+		"stylelint": "^15.11.0",
+		"vue": "^2.7.10",
+		"vue-loader": "^15.11.1",
+		"vue-server-renderer": "^2.7.10",
+		"vue-spline": "^0.0.4",
+		"vue-template-compiler": "^2.7.10",
+		"webpack": "^4.47.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.3",
+		"@babel/eslint-parser": "^7.19.1",
+		"@babel/preset-env": "^7.23.3",
+		"@nuxtjs/eslint-config": "^11.0.0",
+		"@nuxtjs/eslint-module": "^3.1.0",
+		"@nuxtjs/stylelint-module": "^4.2.1",
+		"babel-loader": "^8.3.0",
+		"eslint": "^8.24.0",
+		"eslint-plugin-nuxt": "^4.0.0",
+		"eslint-plugin-vue": "^9.5.1",
+		"postcss-html": "^1.5.0",
+		"sass": "^1.69.5",
+		"sass-loader": "^10.4.1",
+		"stylelint-config-clean-order": "^5.2.0",
+		"stylelint-config-recommended-scss": "^13.1.0",
+		"stylelint-config-standard-scss": "^11.1.0",
+		"stylelint-config-standard-vue": "^1.0.0"
+	}
+}
